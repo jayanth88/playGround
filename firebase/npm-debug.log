@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', '-g', 'install', 'firebase-tools' ]
+2 info using npm@2.3.0
+3 info using node@v0.12.15
+4 verbose node symlink /usr/local/bin/node
+5 silly cache add args [ 'firebase-tools', null ]
+6 verbose cache add spec firebase-tools
+7 silly cache add parsed spec { raw: 'firebase-tools',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'firebase-tools',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed firebase-tools@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'firebase-tools', range: '*', hasData: false }
+12 silly mapToRegistry name firebase-tools
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://repo.sfiqautomation.com/artifactory/api/npm/npm
+15 silly mapToRegistry uri https://repo.sfiqautomation.com/artifactory/api/npm/npm/firebase-tools
+16 verbose addNameRange registry:https://repo.sfiqautomation.com/artifactory/api/npm/npm/firebase-tools not in flight; fetching
+17 verbose request uri https://repo.sfiqautomation.com/artifactory/api/npm/npm/firebase-tools
+18 verbose request always-auth set; sending authorization
+19 info attempt registry request try #1 at 14:48:36
+20 verbose request id c3ff80d12aeaf9c6
+21 http request GET https://repo.sfiqautomation.com/artifactory/api/npm/npm/firebase-tools
+22 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+23 info attempt registry request try #2 at 14:50:02
+24 http request GET https://repo.sfiqautomation.com/artifactory/api/npm/npm/firebase-tools
+25 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+26 info attempt registry request try #3 at 14:52:18
+27 http request GET https://repo.sfiqautomation.com/artifactory/api/npm/npm/firebase-tools
+28 verbose stack Error: connect ETIMEDOUT
+28 verbose stack     at exports._errnoException (util.js:746:11)
+28 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1012:19)
+29 verbose cwd /Users/jparayilkumarji/code/playGround/firebase
+30 error Darwin 15.6.0
+31 error argv "node" "/usr/local/bin/npm" "-g" "install" "firebase-tools"
+32 error node v0.12.15
+33 error npm  v2.3.0
+34 error code ETIMEDOUT
+35 error errno ETIMEDOUT
+36 error syscall connect
+37 error network connect ETIMEDOUT
+37 error network This is most likely not a problem with npm itself
+37 error network and is related to network connectivity.
+37 error network In most cases you are behind a proxy or have bad network settings.
+37 error network
+37 error network If you are behind a proxy, please make sure that the
+37 error network 'proxy' config is set properly.  See: 'npm help config'
+38 verbose exit [ 1, true ]
